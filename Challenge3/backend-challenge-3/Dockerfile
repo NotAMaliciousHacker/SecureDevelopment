@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install any needed packages
 RUN npm install
 
+# Do secret stuff
+RUN echo "VidpciBhYmogb3JwYnpyIG4gem5mZ3JlIHVucHhyZSE=" > /SuperSecret.txt
+
 # Bundle app source
 COPY . .
 
