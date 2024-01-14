@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/backups",
+      "handler": "Backup.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/backups/count",
+      "handler": "Backup.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/backups/:id",
+      "handler": "Backup.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/backups",
+      "handler": "Backup.create",
+      "config": {
+        "policies": []
+      }
+    },
+   {
+      "method": "DELETE",
+      "path": "/backups/:id",
+      "handler": "Backup.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/backups/:id/relationships/:relation",
+      "handler": "Backup.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/backups/:id/relationships/:relation",
+      "handler": "Backup.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/backups/:id/relationships/:relation",
+      "handler": "Backup.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+ ]
+}

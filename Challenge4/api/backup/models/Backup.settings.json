@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "backups",
+  "info": {
+    "name": "backup",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "pwd": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
