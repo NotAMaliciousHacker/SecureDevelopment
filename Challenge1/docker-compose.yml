@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    build: ./backend-challenge-1
+    ports:
+      - "7331:7331"
+    environment:
+      - NODE_ENV=production
+
+  frontend:
+    build: ./frontend-challenge-1
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend

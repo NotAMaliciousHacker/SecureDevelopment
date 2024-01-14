@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend-challenge-2
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend-challenge-2
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=database;Database=master;User=sa;Password=y^rOOew$CSQuqVxU#RUh0$EaJ$Rm#WCW;Encrypt=false
+    depends_on:
+      - database
+
+  database:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      SA_PASSWORD: "y^rOOew$CSQuqVxU#RUh0$EaJ$Rm#WCW"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
