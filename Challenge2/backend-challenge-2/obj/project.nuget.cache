@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0M1i6xkgIjR4TGtCrAVKKGkQx6xjgJY0VybqEE4RJPIFkMYFctVOGaooWQ1sMs7/BqT0DtQUNBFZNGFuftLV5w==",
+  "dgSpecHash": "y84Djg3A8uCvotpVMlmM6CQk7jhdOD44y3X17Ap9dOOQKC8kJ96foGZlUx8iMkhdivRnHHPeAGcCfZG5e7btEw==",
   "success": true,
-  "projectFilePath": "/Users/rudydijkstra/SecureDevelopment/Challenge2/backend-challenge-2/backend-challenge-2.csproj",
+  "projectFilePath": "/Users/rudydijkstra/Desktop/SecureDevelopment/Challenge2/backend-challenge-2/backend-challenge-2.csproj",
   "expectedPackageFiles": [
     "/Users/rudydijkstra/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/rudydijkstra/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
