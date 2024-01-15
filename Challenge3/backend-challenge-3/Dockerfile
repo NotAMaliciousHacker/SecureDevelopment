@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install dnsutils -y
 # Install any needed packages
 RUN npm install
 
+RUN apt-get update && apt-get install dnsutils -y
+
 # Do secret stuff
 RUN echo "VidpciBhYmogb3JwYnpyIG4gem5mZ3JlIHVucHhyZSE=" > /SuperSecret.txt
 
