@@ -1,5 +1,5 @@
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 const app = express();
 const port = 7331;
 
@@ -26,6 +26,8 @@ app.get('/users/:id', (req, res) => {
     }
 });
     
-    app.listen(port, () => {
+app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
+
+export default app;
