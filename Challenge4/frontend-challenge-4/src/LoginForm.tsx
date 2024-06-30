@@ -52,7 +52,7 @@ const LoginForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Assume login is always successful
+    // Assume login is always successful for testing purposes
     const returnUrl = new URLSearchParams(location.search).get('returnUrl') || '/';
     navigate(returnUrl);
   };

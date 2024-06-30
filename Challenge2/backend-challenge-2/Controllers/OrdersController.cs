@@ -27,8 +27,6 @@ namespace SqlInjectionDemo.Controllers
             return await _context.Orders.ToListAsync();
         }
 
-        // GET: /orders?productName=someValue
-        // Vulnerable to SQL Injection
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<Order>>> SearchOrders(string productName)
         {

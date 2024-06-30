@@ -3,7 +3,7 @@ import cors from 'cors';
 const app = express();
 const port = 7331;
 
-// Configure CORS to allow requests from localhost:3001
+// Configure CORS to allow requests from localhost:3000
 const corsOptions = {
     origin: 'http://localhost:3000',
   };
